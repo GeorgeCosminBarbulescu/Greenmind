@@ -1,0 +1,31 @@
+.image_carousel {
+	position: relative;
+}
+.prev, .next {
+	background: url(../images/arrow.png) no-repeat;
+	display: inline-block;
+	width: 40px;
+	height: 18px;
+	text-indent: -9999px;
+}
+#gallery-control {
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	bottom: -95px;
+	width: 200px;	
+}
+#g-prev {
+	
+}
+#g-next {
+	background-position: -50px 0;	
+}
+#carousel a {
+	display: inline-block;
+}
+.caroufredsel_wrapper {
+	margin: auto !important;
+}

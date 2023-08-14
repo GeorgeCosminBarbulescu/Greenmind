@@ -1,0 +1,259 @@
+@charset "utf-8";
+/* CSS Document */
+/* ----------// Default Style \\---------- */
+@font-face {
+    font-family:"BEANPOLE";
+    src: url('css/fonts/BEANPOLE.eot');
+    src: url('css/fonts/BEANPOLE.eot?iefix') format('eot'),
+         url('css/fonts/BEANPOLE.woff') format('woff'),
+         url('css/fonts/BEANPOLE.ttf') format('truetype'),
+         url('css/fonts/BEANPOLE.svg') format('svg');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family:"OratorStd";
+    src: url('css/fonts/OratorStd.eot');
+    src: url('css/fonts/OratorStd.eot?iefix') format('eot'),
+         url('css/fonts/OratorStd.woff') format('woff'),
+         url('css/fonts/OratorStd.ttf') format('truetype'),
+         url('css/fonts/OratorStd.svg') format('svg');
+    font-weight: normal;
+}
+body {
+	background-color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+}
+* {
+	margin:0;
+	padding:0;
+}
+
+ul {
+	list-style-type:none;
+}
+
+a {
+	text-decoration:none;
+	/*
+	color:#4B4B4B;
+	*/
+	color:#FFFFFF;
+	outline: 0;
+}
+
+a:hover {
+	text-decoration:none;
+	color:#FFFFFF;
+}
+
+a:active {
+	color:#FFFFFF;
+}
+
+a:visited {
+	color:#FFFFFF;
+}
+
+a.custom {
+	color:#90BE05;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+}
+.fleft {
+	float: left;
+}
+.fright {
+	float: right;
+}
+/* ----------// End Default Style \\---------- */
+
+/* ----------// Content Style \\---------- */
+.menu-nav > li {
+	position: relative;
+	margin: 0 0 0 100px;
+}
+.menu-nav {
+	width: 300px;
+}
+.menu-nav > li > span {
+    background: url("images/photography_arrow.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 100px;
+    left: -37px;
+    position: absolute;
+    top: -19px;
+    width: 247px;
+	display: none;
+	z-index: 1;
+}
+
+.menu-nav > li.about > span {
+    background:url("images/about_arrow.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 288px;
+    left: -37px;
+    position: absolute;
+    top: -19px;
+    width: 520px;
+	display: none;
+	z-index: 1;
+}
+
+.menu-nav > li.conctact > span {
+    background:url("images/contact_arrow.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 510px;
+    left: -37px;
+    position: absolute;
+    top: -19px;
+    width: 175px;
+	display: none;
+	z-index: 1;
+}
+
+.menu-nav > li > a {
+	position: relative;
+	z-index: 2;
+}
+.sub-menu-nav {
+    position: absolute;
+    right: -180px;
+    top: 0;
+    z-index: 2000;
+	display: none;
+	/*background: rgba(0,0,0,0.55);*/
+	min-width: 150px;
+	/*border: 1px solid #504F0C;*/
+	border-radius: 5px;
+	padding: 10px;
+	
+}
+.sub-menu-nav > li > a {
+	color: #9c9c9c !important;
+	font-size: 12px;
+}
+
+.clearfix:before, .clearfix:after {
+	display:table;
+	content:"";
+}
+
+.clearfix:after {
+	clear:both;
+}
+
+#main-page {
+	margin:80px auto;
+	padding:0 5px;
+	width:100%;
+	position:relative;
+	background-color:#000;
+	height: 100%;
+}
+
+#main-page a {
+	font-family:"BEANPOLE";
+	font-size:24px;
+	font-weight:bold;
+	letter-spacing:1px;
+	color:#9c9c9c;
+	font-weight:bold;
+	padding-right:5px;
+}
+
+#main-page p {
+	font-family:"BEANPOLE";
+	font-size:18px;
+	font-weight:bold;
+	letter-spacing:1px;
+	word-spacing:1px;
+	/*
+	color:#4B4B4B;
+	*/
+	color:#FFFFFF;
+}
+
+
+#main-page a:hover, #main-page .activ {
+	color:#FFFFFF;
+}
+
+#main-page a:active {
+	color:#FFFFFF;
+}
+
+.sub-menu-nav li a:hover {
+	color:#FFFFFF !important;
+}
+
+main-menu {
+	position:relative;
+	padding-bottom:10px;
+}
+
+/* ----------// End Content Style \\---------- */
+
+/* ----------// START: Gallery \\---------- */
+#gallery {}
+#gallery .top {
+	background:url(images/top-line.png) no-repeat left top;
+	background-size: 100%;
+}
+#gallery .bottom {
+	background:url(images/bottom-line.png) no-repeat left bottom;
+	background-size: 100%;
+	margin-top: 15px;
+}
+#gallery .top, #gallery .bottom   {
+	height: 38px;
+	width: 100%; 
+}
+.fancybox img {
+	-moz-transition: opacity 300ms ease-in-out 0s;
+	-webkit-transition: opacity 300ms ease-in-out 0s;
+	-o-transition: opacity 300ms ease-in-out 0s;
+	-ms-transition: opacity 300ms ease-in-out 0s;
+	transition: opacity 300ms ease-in-out 0s;
+	opacity: 0.7;
+}
+.fancybox img:hover {
+	opacity: 1;
+}
+/* ----------// END: Gallery \\---------- */
+#logo a {
+	background:url(images/greenmind.png) no-repeat;
+	display: block;
+	width: 200px;
+	height: 65px;
+	margin: 60px 20px 0 0;
+}
+
+#contact_line {
+	background:url(images/contact_circle.png) no-repeat scroll;
+	margin-top:265px;
+	margin-left:95px;
+}
+
+#about {
+	position:relative;
+	top:275px;
+}
+
+#about p {
+	font-family:"OratorStd";
+	text-align:right;
+	font-size:13px;
+	text-indent:50px;
+	font-weight:bold;
+}
+
+#about_line img {
+	background:url(images/about_bottom_line.png) no-repeat scroll;
+	position:relative;
+	top:-13px;
+	left:180px;
+}
